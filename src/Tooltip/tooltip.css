@@ -1,0 +1,10 @@
+.tooltip_container{
+    border: 1px solid yellow;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    /* visibility: hidden; */
+    display: none;
+}
+
+
