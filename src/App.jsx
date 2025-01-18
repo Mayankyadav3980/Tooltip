@@ -5,6 +5,7 @@ import './App.css'
 import Tooltip from './Tooltip/Tooltip'
 
 function App() {
+    const [st, sst] = useState(false);
     const showTooltip = (e) => {
       console.log('on btn');
       
@@ -25,13 +26,19 @@ function App() {
 
   return (
     <>
-      <h1>lets start making the project</h1>
-      <button id="btn" onMouseOver={showTooltip} 
-      onMouseOut={hideTooltip}
-      >
-        Hover over me
-      </button>
-      <Tooltip />
+      <div className="main_container">
+        <div className="box">
+          <button
+            id="btn"
+            onMouseOver={() => sst(true)}
+            onMouseOut={() => sst(false)}
+          >
+            Hover over me
+          {/* {st && <Tooltip position='right'/>} */}
+          </button>
+          <Tooltip />
+        </div>
+      </div>
     </>
   );
 }

@@ -1,10 +1,24 @@
 .tooltip_container{
+    position: relative;
+    /* left: 58%; */
     border: 1px solid yellow;
     background-color: white;
     color: black;
     width: fit-content;
-    /* visibility: hidden; */
-    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.inner_container{
+    position: absolute;
+    top: 25%;
+    left: -10px;
+    transform: rotate(45deg);
+    background-color: white;
+    width: 20px;
+    height: 20px;
 }
 
 
