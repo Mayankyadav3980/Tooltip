@@ -1,11 +1,15 @@
 import React from "react";
 import "./tooltip.css";
 
-const Tooltip = ({ position }) => {
+const Tooltip = ({ position, children, showTooltip }) => {
   return (
-    <div className="tooltip_container" id="tooltip">
-      <div className="inner_container"></div>
-      Thanks for hovering! I'm a tooltip
+    <div className="tooltip_container">
+      {children}
+      {showTooltip && (
+        <div className={`inner_container ${position}`}>
+          Thanks for hovering! I'm a tooltip
+        </div>
+      )}
     </div>
   );
 };
