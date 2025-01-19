@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="main_container">
         <div className="box">
-          <Tooltip position="bottom" showTooltip={showTooltip}>
+          <Tooltip position="right" showTooltip={showTooltip}>
             <button
               id="btn"
               onMouseOver={() => setShowTooltip(true)}
