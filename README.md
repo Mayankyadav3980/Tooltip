@@ -3,7 +3,7 @@
 - This project is built using [Vite](https://vite.dev) + [React](http://react.dev/).<br>
 - Steps to run the project:<br>
    1. Clone the repo on your system.<br>
-   2. Run the following commands:<br>
+   2. Run the following commands in terminal:<br>
       - npm install
       - npm run dev
 
